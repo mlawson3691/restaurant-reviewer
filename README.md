@@ -1,36 +1,45 @@
-# _ with PHP_
+# Restaurant Reviewer
 
-#### _A basic web application which , September 9, 2016_
+#### A PHP application to review restaurants, September 21st, 2016
 
-#### By _**Stephen Burden**_
+#### By Mark Lawson & Stephen Burden
 
 ## Description
-_This application is . It from user's form inputs._
 
-## Specifications
-| Behavior | Input Ex. | Output Ex. |
-| --- | --- | --- |
-| Takes and returns |   |   |
+This application is an exercise in PHP and MySQL. Users can add restaurants to the site and review other restaurants. The application is built with PHP, using the Silex framework, Twig templates, and Bootstrap for styling.
 
-## Setup/Installation Requirements
-* _Clone the repository from the link below to your desktop_
-* _Run Composer Install to include all dependencies_
-* _In Terminal or Command Prompt go to the /web directory and enter the command: php -S localhost:8000_
-* _To browse go to http://localhost:8000/ in the browser of your choosing_
+## Setup/Installation Instructions
 
-## Link
-https://github.com/spburden/-php
+* Clone the repository
+* Using the command line, navigate to the project's root directory
+* Install dependencies by running $ composer install
+* Sign into MySQL shell by running $ /Applications/MAMP/Library/bin/mysql --host=localhost -uroot -proot
+* Start MAMP server and go to MAMP preferences:
+    * Set Document Root to project's root directory
+    * In the app/app.php project file, make sure the $server variable points to the localhost port listed under Ports>MySQL port in MAMP
+* In a browser, go to http://localhost/phpmyadmin
+* Select Import from the top menu and choose the compressed .sql files from the projects root directory and click 'Go' to import the databases
+* Navigate to the /web directory and start a local server with $ php -S localhost:8000
+* Open a browser and go to the address http://localhost:8000 to view the application
 
-## Known Bugs
-_There are no known bugs with this application._
+## Known Bugs ##
 
-## Support and contact details
-_spburden@hotmail.com_
+There are no known bugs at this time.
 
-## Technologies Used
-_PHP, Silex, Twig, PHP Unit, HTML, and Bootstrap_
+## Support and Contact Details ##
 
-### License
-The MIT License (MIT)
+Please report any bugs or issues to mlawson3691@gmail.com.
 
-Copyright (c) 2016 **_Stephen Burden_**
+## Languages/Technologies Used ##
+
+* PHP
+* Silex
+* Twig
+* PHPUnit
+* Bootstrap
+
+### License ###
+
+*This application is licensed under the MIT license.*
+
+Copyright (c) 2016 Mark Lawson & Stephen Burden
